@@ -26,6 +26,10 @@ Ryerosn University
 
 }
 
+%
+% This is a General Comment
+%
+
 \date[2015] % (optional)
 {PhD Proposal Defense \\
 	May 2015}
@@ -75,10 +79,10 @@ Ryerosn University
 This is a text in second frame. For the sake of showing an example.
 
 \begin{itemize}
-    \item<1-> Text visible on slide 1
-    \item<2-> Text visible on slide 2
-    \item<3> Text visible on slides 3
-    \item<4-> Text visible on slide 4
+    \item<1-> I changed this
+    \item<2-> Text visible on my slide 2
+    \item<3> Text visible on slides 6
+    \item<4-> Text visible on slide 10
 \end{itemize}
 \end{frame}
 
@@ -90,7 +94,7 @@ This is a text in second frame. For the sake of showing an example.
 \begin{frame}
 In this slide \pause
 
-the text will be partially visible \pause
+the text will be partially visible \pause % In Line Comments
 
 And finally everything will be there
 \end{frame}
@@ -209,7 +213,8 @@ layout in some cases.
 	\frametitle{SVM Kernels Cont'd}
 	\begin{itemize}
 		\item  Radial Basis Function (RBF):
-		\begin{equation} 
+		\begin{equation}
+		% Comment about this equation 
 		K(\mathrm{x}_{i},\ \mathrm{x}_{j})=\exp(-\gamma\Vert \mathrm{x}_{i}-\mathrm{x}_{j}\Vert^{2}), \gamma>0
 		\end{equation}
 		
@@ -221,8 +226,7 @@ layout in some cases.
 
 \end{frame}
 
-\section{The Proposed Technique}
+\section{Changed}
 \subsection{Simulation Results}
-\subsection{Conclusion and Future Works}
 
 \end{document}
