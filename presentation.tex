@@ -1,0 +1,228 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usepackage{utopia} %font utopia imported
+
+\usetheme{Copenhagen}
+\usecolortheme{default}
+
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[\insertframenumber/\inserttotalframenumber] %optional
+{User Independent Multi-class Hand Posture Modeling For Gesture Recognition}
+
+%\subtitle{PhD Proposal Defense}
+
+\author[PhD Proposal] % (optional)
+{Ghassem Tofighi}
+
+\institute[VFU] % (optional)
+{
+%\inst{1}%
+Department of Electrical and Computer Engineering\\
+Ryerosn University
+
+}
+
+\date[2015] % (optional)
+{PhD Proposal Defense \\
+	May 2015}
+
+\logo{\includegraphics[height=0.5cm]{Figures/Ryerson_University_Logo.png}}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+
+%The next statement creates the title page.
+\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+\section{Introduction}
+
+%---------------------------------------------------------
+%Changing visivility of the text
+\begin{frame}
+\frametitle{Sample frame title}
+This is a text in second frame. For the sake of showing an example.
+
+\begin{itemize}
+    \item<1-> Text visible on slide 1
+    \item<2-> Text visible on slide 2
+    \item<3> Text visible on slides 3
+    \item<4-> Text visible on slide 4
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%Example of the \pause command
+\begin{frame}
+In this slide \pause
+
+the text will be partially visible \pause
+
+And finally everything will be there
+\end{frame}
+%---------------------------------------------------------
+
+\subsection{Abstract}
+
+%---------------------------------------------------------
+%Highlighting text
+\begin{frame}
+\frametitle{Sample frame title}
+
+In this slide, some important text will be
+\alert{highlighted} beause it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}
+Sample text in green box. "Examples" is fixed as block title.
+\end{examples}
+\end{frame}
+%---------------------------------------------------------
+
+\subsection{Objectives and Contributions}
+%---------------------------------------------------------
+%Two columns
+\begin{frame}
+\frametitle{Objectives}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+This is a text in first column.
+$$E=mc^2$$
+\begin{itemize}
+\item First item
+\item Second item
+\end{itemize}
+
+\column{0.5\textwidth}
+This text will be in the second column
+and on a second tought this is a nice looking
+layout in some cases.
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+\begin{frame}
+	\frametitle{Contributions}
+	List of all Contributions
+	
+	\begin{itemize}
+		\item<1-> New Hand Modeling Technique
+		\item<2-> HandReadr Dataset
+	\end{itemize}
+\end{frame}
+%---------------------------------------------------------
+
+\section{Literature Survey}
+\subsection{Literature History and Theory}
+\subsection{Related Works}
+\subsection{Shape Descriptors}
+%---------------------------------------------------------
+\begin{frame}
+	\frametitle{Shape Descriptors}
+	List of all Shape Descriptors
+	
+	\begin{itemize}
+		\item<1-> Shape Descriptor 1
+		\item<2-> Shape Descriptor 2
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Fourier Descriptors}
+	List of all Fourier Descriptors
+	
+	\begin{itemize}
+		\item<1-> New Hand Modeling Technique
+		\item<2-> HandReadr Dataset
+	\end{itemize}
+\end{frame}
+%---------------------------------------------------------
+
+\subsection{Dimension Reduction Using PCA}
+\subsection{Support Vector Machines}
+
+\begin{frame}
+	\frametitle{SVM Kernels}
+	The most important SVM Kernels
+		\begin{itemize}
+		\item <1-> Linear Kernel
+		\begin{block}{Linear} 
+		\begin{equation}
+		K(\mathrm{x}_{i},\mathrm{x}_{j})=\mathrm{x}_{i}^{T}\mathrm{x}_{j}
+		\end{equation}
+		\end{block}		
+
+		\item <2-> Polynomial Kernel
+		\begin{block}{Polynomial} 
+		\begin{equation}
+		K(\mathrm{x}_{i},\mathrm{x}_{j})=(\gamma\mathrm{x}_{i}^{T}\mathrm{x}_{j}+r)^{d}, \gamma>0
+		\end{equation}
+		\end{block}		
+ 		\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{SVM Kernels Cont'd}
+	\begin{itemize}
+		\item  Radial Basis Function (RBF):
+		\begin{equation} 
+		K(\mathrm{x}_{i},\ \mathrm{x}_{j})=\exp(-\gamma\Vert \mathrm{x}_{i}-\mathrm{x}_{j}\Vert^{2}), \gamma>0
+		\end{equation}
+		
+		\item Sigmoid: 
+		\begin{equation}
+		K(\mathrm{x}_{i},\ \mathrm{x}_{j})=\tanh(\gamma \mathrm{x}_{i^{T}}\mathrm{x}_{j}+r)
+		\end{equation}
+	\end{itemize}
+
+\end{frame}
+
+\section{The Proposed Technique}
+\subsection{Simulation Results}
+\subsection{Conclusion and Future Works}
+
+\end{document}
